@@ -1,0 +1,470 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Online Education</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="#home" class="logo">EduLearn</a>
+        <button class="menu-toggle" id="menuToggle" type="button">
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#youtube-channels">YouTube Channels</a></li>
+            <li><a href="#about-text">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#account">Student Account</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+        <h1>Learn New Skills.
+            <span>Build Your Future.</span>
+        </h1>
+
+        <p>
+            Welcome to EduLearn, an online learning platform
+            where students can learn programming, watch
+            educational videos and download study notes.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#courses" class="btn primary-btn">
+                Explore Courses
+            </a>
+
+           <a href="#about-text" class="btn secondary-btn">
+    Learn More
+   </a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="educational.png"
+             alt="Student learning with a laptop">
+    </div>
+
+</section>
+
+
+<!-- COURSES SECTION -->
+<section id="courses" class="courses-section">
+
+    <div class="section-heading">
+        <h2>Explore Our Courses</h2>
+        <p>Choose a course and start learning.</p>
+    </div>
+
+    <!-- Search and Filter -->
+    <div class="course-search">
+
+        <input type="search"
+               id="courseSearch"
+               placeholder="Search courses...">
+
+        <select id="courseFilter">
+            <option value="all">All Courses</option>
+            <option value="web">Web Development</option>
+            <option value="programming">Programming</option>
+            <option value="database">Database</option>
+        </select>
+
+    </div>
+
+    <p id="noCoursesMessage" hidden>
+        No courses found.
+    </p>
+
+    <p id="enrollMessage" class="enroll-message"></p>
+
+    <div class="course-container">
+
+        <article class="course-card" data-category="web">
+            <div class="course-icon">🌐</div>
+            <h3>HTML</h3>
+            <p>Learn HTML and create web pages.</p>
+            <a href="#youtube-channels" class="course-btn">
+          Start Learning</a>
+            <button class="course-btn enroll-btn"
+                    data-course="HTML" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+        <article class="course-card" data-category="web">
+            <div class="course-icon">🎨</div>
+            <h3>CSS</h3>
+            <p>Learn how to design beautiful websites.</p>
+            <a href="#videos" class="course-btn">
+                Start Learning
+            </a>
+            <button class="course-btn enroll-btn"
+                    data-course="CSS" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+        <article class="course-card" data-category="programming">
+            <div class="course-icon">⚡</div>
+            <h3>JavaScript</h3>
+            <p>Make your websites interactive.</p>
+            <a href="#videos" class="course-btn">
+                Start Learning
+            </a>
+            <button class="course-btn enroll-btn"
+                    data-course="JavaScript" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+        <article class="course-card" data-category="programming">
+            <div class="course-icon">☕</div>
+            <h3>Java</h3>
+            <p>Learn object-oriented programming.</p>
+            <a href="#videos" class="course-btn">
+                Start Learning
+            </a>
+            <button class="course-btn enroll-btn"
+                    data-course="Java" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+        <article class="course-card" data-category="programming">
+            <div class="course-icon">💻</div>
+            <h3>C++</h3>
+            <p>Learn programming and problem solving.</p>
+            <a href="#videos" class="course-btn">
+                Start Learning
+            </a>
+            <button class="course-btn enroll-btn"
+                    data-course="C++" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+        <article class="course-card" data-category="database">
+            <div class="course-icon">🗄️</div>
+            <h3>Database</h3>
+            <p>Learn SQL and database management.</p>
+            <a href="#videos" class="course-btn">
+                Start Learning
+            </a>
+            <button class="course-btn enroll-btn"
+                    data-course="Database" type="button">
+                Enroll Now
+            </button>
+        </article>
+
+    </div>
+</section>
+
+
+<!-- VIDEOS SECTION -->
+
+<!-- WEB DEVELOPMENT YOUTUBE CHANNELS -->
+<section id="youtube-channels" class="youtube-section">
+
+    <div class="section-heading">
+        <h2>Learn From YouTube Channels</h2>
+        <p>Choose your favorite channel and start learning Web Development.</p>
+    </div>
+
+    <div class="channel-container">
+
+        <div class="channel-card">
+            <h3>freeCodeCamp</h3>
+            <p>HTML, CSS, JavaScript and more.</p>
+            <a href="https://www.youtube.com/@freecodecamp"
+               target="_blank" rel="noopener noreferrer">
+                Visit Channel →
+            </a>
+        </div>
+
+        <div class="channel-card">
+            <h3>Traversy Media</h3>
+            <p>Web development projects and tutorials.</p>
+            <a href="https://www.youtube.com/@TraversyMedia"
+               target="_blank" rel="noopener noreferrer">
+                Visit Channel →
+            </a>
+        </div>
+
+        <div class="channel-card">
+            <h3>The Net Ninja</h3>
+            <p>Learn HTML, CSS, JavaScript and React.</p>
+            <a href="https://www.youtube.com/@NetNinja"
+               target="_blank" rel="noopener noreferrer">
+                Visit Channel →
+            </a>
+        </div>
+
+        <div class="channel-card">
+            <h3>Programming with Mosh</h3>
+            <p>Learn programming step by step.</p>
+            <a href="https://www.youtube.com/@programmingwithmosh"
+               target="_blank" rel="noopener noreferrer">
+                Visit Channel →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about-text" class="about-text">
+
+    <h3>Welcome to EduLearn!</h3>
+
+    <p>
+        Welcome to EduLearn – Your Gateway to a World of Knowledge!
+        Are you ready to learn new skills, explore technology,
+        and build your future? EduLearn is a modern online
+        learning platform dedicated to helping students discover
+        their potential and achieve their dreams through
+        technology and education.
+    </p>
+
+    <p>
+        From HTML, CSS, and JavaScript to Java, Python,
+        and Database Management, EduLearn provides learning
+        opportunities for beginners and passionate learners.
+        Explore educational videos from popular YouTube
+        channels, discover useful study resources, and
+        improve your programming skills step by step.
+    </p>
+
+    <p>
+        Whether your goal is to become a professional
+        software developer, improve your computer skills,
+        or solve real-world problems through programming,
+        EduLearn is here to support your learning journey.
+        Start learning today, turn your ideas into reality,
+        and build a brighter digital future with EduLearn!
+    </p>
+
+    <a href="#courses" class="about-btn">
+        Start Your Learning Journey →
+    </a>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+
+    <div class="section-heading">
+        <h2>Contact Us</h2>
+        <p>Send us your message.</p>
+    </div>
+
+    <div class="contact-container">
+
+        <form id="contactForm">
+
+            <div class="form-group">
+                <label for="contactName">Full Name</label>
+                <input type="text"
+                       id="contactName"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="contactEmail">Email</label>
+                <input type="email"
+                       id="contactEmail"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text"
+                       id="subject"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message"
+                          rows="5"
+                          required></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+    </div>
+</section>
+
+
+<!-- ACCOUNT SECTION -->
+<section id="account" class="account-section">
+
+    <div class="section-heading">
+        <h2>Student Account</h2>
+        <p>Register or login to your account.</p>
+    </div>
+
+    <div class="account-container">
+
+        <!-- REGISTER FORM -->
+        <form id="registerForm">
+
+            <h3>Create Account</h3>
+
+            <div class="form-group">
+                <label for="regName">Full Name</label>
+                <input type="text" id="regName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="regPassword">Password</label>
+                <input type="password"
+                       id="regPassword"
+                       minlength="8"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">
+                    Confirm Password
+                </label>
+                <input type="password"
+                       id="confirmPassword"
+                       required>
+            </div>
+
+            <button type="submit" class="account-btn">
+                Register
+            </button>
+
+            <p id="registerMessage" class="account-message"></p>
+
+            <p class="account-switch">
+                Already have an account?
+                <button type="button" id="showLogin">
+                    Login here
+                </button>
+            </p>
+
+        </form>
+
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" hidden>
+
+            <h3>Student Login</h3>
+
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+
+            <button type="submit" class="account-btn">
+                Login
+            </button>
+
+            <p id="loginMessage" class="account-message"></p>
+
+            <p class="account-switch">
+                Don't have an account?
+                <button type="button" id="showRegister">
+                    Register here
+                </button>
+            </p>
+
+        </form>
+
+
+        <!-- STUDENT DASHBOARD -->
+        <div id="studentDashboard" hidden>
+
+            <h3>Student Dashboard</h3>
+
+            <p id="studentWelcome"></p>
+
+            <div class="profile-box">
+                <h4>My Profile</h4>
+
+                <p>
+                    Name:
+                    <span id="profileName"></span>
+                </p>
+
+                <p>
+                    Email:
+                    <span id="profileEmail"></span>
+                </p>
+            </div>
+
+            <div class="dashboard-stats">
+
+                <div class="stat-card">
+                    <strong id="totalCourses">6</strong>
+                    <span>Total Courses</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong id="enrolledCourses">0</strong>
+                    <span>Enrolled Courses</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong id="completedCourses">0</strong>
+                    <span>Completed Courses</span>
+                </div>
+
+            </div>
+
+            <h4>My Courses</h4>
+
+            <div id="myCourses"></div>
+
+            <button type="button"
+                    id="logoutBtn"
+                    class="account-btn logout-btn">
+                Logout
+            </button>8]
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <p>&copy; <span id="currentYear"></span> EduLearn. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
